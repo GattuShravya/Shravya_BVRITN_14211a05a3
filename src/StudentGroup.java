@@ -40,8 +40,8 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
-		try {if(student.length!=0)
-			return student;}
+		try {if(students.length!=0)
+			return students;}
 		catch(IllegalArgumentException e) {
 		}
 		
