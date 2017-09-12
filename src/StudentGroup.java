@@ -102,13 +102,19 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void bubbleSort() {
 		// Add your implementation here
-		/*for(int i=0;i<n;i++) {
-			for(int j=i+1;j<n;j++)
+		int n,i,j,temp;
+		char arr[20];
+		for(i=0;i<n;i++) {
+			for(j=i+1;j<n;j++)
 			{
 				if(arr[j]>arr[j+1])
-					swap(&arr[j],&arr[j+1]);
+				{
+					temp=arr[j];
+					arr[j]=arr[j+1];
+					arr[j+1]=temp;
+				}
 			}
-		}*/
+		}
 	}
 
 	@Override
