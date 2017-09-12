@@ -40,6 +40,11 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
+		try {if(student.length!=0)
+			return student;}
+		catch(IllegalArgumentException e) {
+		}
+		}
 		return null;
 	}
 
@@ -108,6 +113,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getByBirthDate(Date date) {
 		// Add your implementation here
+		
 		return null;
 	}
 
