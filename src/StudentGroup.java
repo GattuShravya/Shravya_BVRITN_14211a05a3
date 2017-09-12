@@ -25,6 +25,10 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public Student[] getStudents() {
+		try {if(students.length!=0)
+			return students;}
+		catch(IllegalArgumentException e) {
+		}
 		// Add your implementation here
 		//System.out.println("Enter no of students");
 		
@@ -40,10 +44,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
-		try {if(students.length!=0)
-			return students;}
-		catch(IllegalArgumentException e) {
-		}
+		
 		
 		return null;
 	}
