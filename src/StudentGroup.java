@@ -26,12 +26,15 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getStudents() {
 		// Add your implementation here
+		System.out.println("Enter no of students");
+		
 		return null;
 	}
 
 	@Override
 	public void setStudents(Student[] students) {
 		// Add your implementation here
+		System.out.println("The student details");
 	}
 
 	@Override
@@ -93,6 +96,13 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void bubbleSort() {
 		// Add your implementation here
+		for(int i=0;i<n;i++) {
+			for(int j=i+1;j<n;j++)
+			{
+				if(arr[j]>arr[j+1])
+					swap(&arr[j],&arr[j+1]);
+			}
+		}
 	}
 
 	@Override
@@ -110,6 +120,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getNearBirthDate(Date date, int days) {
 		// Add your implementation here
+		
 		return null;
 	}
 
